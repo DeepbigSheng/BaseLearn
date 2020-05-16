@@ -21,6 +21,7 @@ public class MainConfiguration {
             ds.setJdbcUrl(jdbcProperty.getUrl());
             ds.setUser(jdbcProperty.getUsername());
             ds.setPassword(jdbcProperty.getPassword());
+            ds.setInitialPoolSize(Integer.parseInt(jdbcProperty.getInitialPoolSize()));
             ds.setMaxIdleTime(Integer.parseInt(jdbcProperty.getMaxIdleTime()));
             ds.setMinPoolSize(Integer.parseInt(jdbcProperty.getMinPoolSize()));
             ds.setMaxPoolSize(Integer.parseInt(jdbcProperty.getMaxPoolSize()));
